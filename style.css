@@ -1,0 +1,25 @@
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-self: auto;
+    background-color: aqua;
+}
+.rainbow{
+    height: 300px;
+    width: 300px;
+    background: conic-gradient(
+        red,orange,yellow,green,blue,indigo,violet);
+        border: 10px solid black;
+        border-radius: 50%;
+        animation: rotate is linear infinite;
+}
+        
+    
+    @keyframes orbit {
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
